@@ -7,7 +7,6 @@
     <title>Frontend Mentor | Intro component with sign up form</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
   
     <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -27,22 +26,26 @@
       but understanding how developers think is invaluable.</p>
     </section>
     
-    <section class="section form">
+    <section class="section">
       <h2><span>Try it free 7 days</span> then $20/mo. thereafter</h2>
-      <form action="" method="POST" autocomplete="on">
-        <input class="input" id="fName" type="text" name="fName" required placeholder="First Name" >
-        <div class="wrng" id="fNameWrng" ></div>
 
-        <input class="input" id="lName" type="text" name="lName" required placeholder="Last Name" >
-        <div class="wrng" id="lNameWrng" ></div>
+      <form class="signUpForm" action="#" method="POST" autocomplete="on" >
+    
+        <input class="input" type="text" name="fName" placeholder="First Name" >
+        <div class="error-msg">First Name cannot be empty</div>
 
-        <input class="input" id="email" type="email" name="email" required placeholder="Email Address" >
-        <div class="wrng" id="emailWrng" ></div>
+        <input class="input" type="text" name="lName" placeholder="Last Name" >
+        <div class="error-msg">Last Name cannot be empty</div>
+ 
+        <input class="input" type="em" name="email" placeholder="Email Address" >
+        <div class="error-msg" >Email cannot be empty</div>
+        <div class="error-msg error-email">Looks like this is not an email</div>
 
-        <input class="input" id="pswd" type="password" name="pswd" required placeholder="Password" >
-        <div class="wrng" id="pswdWrng" ></div>
-            
-        <input class="button" type="submit" value="Claim your free trial" onclick="return emailValid()">
+        <input class="input" type="password" name="pswd" placeholder="Password" >
+        <div class="error-msg" >Password cannot be empty</div>
+
+        <button class="btn-submit" type="submit">Claim your free trial</button>
+
 
   <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
 </form>
@@ -56,5 +59,7 @@
       </p>
   </footer>
 </div>
+<script src="main.js"></script>
+
 </body>
 </html>
