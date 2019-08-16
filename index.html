@@ -31,20 +31,20 @@
 
       <form class="signUpForm" action="#" method="POST" autocomplete="on" >
     
-        <input class="input" type="text" name="fName" placeholder="First Name" >
-        <div class="error-msg">First Name cannot be empty</div>
+        <input class="input" type="text" name="fName" placeholder="First Name" aria-label="Enter First Name" >
+        <div class="error-msg" role="alert" aria-live="assertive">First Name cannot be empty</div>
 
-        <input class="input" type="text" name="lName" placeholder="Last Name" >
-        <div class="error-msg">Last Name cannot be empty</div>
+        <input class="input" type="text" name="lName" placeholder="Last Name" aria-label="Enter Last Name" >
+        <div class="error-msg" role="alert" aria-live="assertive">Last Name cannot be empty</div>
  
-        <input class="input" type="em" name="email" placeholder="Email Address" >
-        <div class="error-msg" >Email cannot be empty</div>
-        <div class="error-msg error-email">Looks like this is not an email</div>
+        <input class="input" type="em" name="email" placeholder="Email Address" aria-label="Enter Email Address" >
+        <div class="error-msg" role="alert" aria-live="assertive" >Email cannot be empty</div>
+        <div class="error-msg error-email" role="alert" aria-live="assertive">Looks like this is not an email</div>
 
-        <input class="input" type="password" name="pswd" placeholder="Password" >
-        <div class="error-msg" >Password cannot be empty</div>
+        <input class="input" type="password" name="pswd" placeholder="Password" aria-label="Enter Password" >
+        <div class="error-msg" role="alert" aria-live="assertive">Password cannot be empty</div>
 
-        <button class="btn-submit" type="submit">Claim your free trial</button>
+        <button class="btn-submit" type="submit" aria-label="Button Submit">Claim your free trial</button>
 
 
   <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
